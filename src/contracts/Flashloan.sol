@@ -22,7 +22,7 @@ contract Flashloan is FlashLoanReceiverBase {
     {
         require(_amount <= getBalanceInternal(address(this), _reserve), "Invalid balance, was the flashLoan successful?");
 
-        //
+        //  
         // Your logic goes here.
         // !! Ensure that *this contract* has enough of `_reserve` funds to payback the `_fee` !!
         //
